@@ -1,0 +1,17 @@
+{
+    "name": "mern-ecommerce",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "npm run dev --prefix server",
+        "client": "npm run dev --prefix client",
+        "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+        "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4.1.18",
+        "autoprefixer": "^10.4.23",
+        "concurrently": "^8.2.0",
+        "postcss": "^8.5.6"
+    }
+}
